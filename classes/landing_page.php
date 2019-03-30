@@ -101,7 +101,7 @@
 	</style>
 </head>
 
-<body>
+<body style="background-color:#f9f9f9">
 	<!--Navbar-->
 	<h1 class="typing"></h1>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">

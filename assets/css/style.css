@@ -12,10 +12,10 @@ body{
 text-decoration: none;
 color:#B0413E;
 
-padding-right:35px;
+padding-right:45px;
 letter-spacing: 1px;
 font-family: 'Nunito Sans', sans-serif;
-font-size: 18px;
+font-size: 20px;
 }
 .bit_nav:hover{
 color:#bd4642; 
@@ -29,7 +29,7 @@ color:#bd4642;
 	font-size: 16px;
 	font-family: 'Nunito Sans', sans-serif;
 	box-shadow: 1px 1px 5px #CEE5F2;
-	border: non;
+	border: none;
 }
 .bit_button:hover{
 	color: #bd4642;
