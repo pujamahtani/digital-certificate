@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="../assets/css/workflow.css">
 	<link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 	<link rel="stylesheet" href="../assets/vendor/OwlCarousel2-develop/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/vendor/engine2/style.css" />
+	<script type="text/javascript" src="../assets/vendor/engine2/jquery.js"></script>
 
 
 
@@ -116,7 +118,7 @@
 				<a class="nav-link active bit_nav" href="#contact" style="color:#B0413E ">Contact</a>
 			</li>
 			<li class="nav-item ">
-				<a class="logout btn bit_button" href="#" style="color:#fff;background-color:#b0413e; margin-top:5px;">Login</a>
+				<a class="logout btn bit_button" href="../classes/login/login.php" style="color:#fff;background-color:#b0413e; margin-top:5px;">Login</a>
 			</li>
 
 
@@ -130,13 +132,13 @@
 
 	<div class="container-fluid" style="margin-top:60px;background-color:#bd4642;">
 		<div class="row">
-			<div class="col-md-6 js-tilt" data-tilt>
+			<div class="col-md-6 " data-tilt>
 				<img src="../assets/images/2.png" alt="">
 			</div>
 			<div class="col-md-5 type">
 				<h2 style="color:#fff;padding-bottom:10px;letter-spacing:3px;"><i>Digital Certificate Generation!</i></h2>
-				<p style="text-align:justify;color:#fff;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, at dolorum, mollitia itaque sapiente, doloremque doloribus, nobis ratione quaerat voluptatum laudantium ipsa enim dolor nesciunt inventore eius quo obcaecati labore.ipsum laudantium ipsa enim dolor nesciunt inventore eius quo obcaecati labore.ipsum laudantium ipsa enim dolor nesciunt inventore eius quo obcaecati labore.ipsum</p>
-				<button class="btn generate" style="width:180px;height:60px;border:2px solid #fff;color:#fff;background-color:#b0413e;margin-left:200px;margin-top:30px;padding:15px;font-size:20px">Generate Now -></button>
+				<p style="text-align:justify;color:#fff;font-size:18px;">As it has been observed that the forgery of the the certificates has been increasing gradually.Also, a lot of paper is been wasted for generating hard copies of certificates. This issue can be solved by creating digital certificates i.e. e-certificates. The digital certificates can be generated with a QR-code on certificate using the blockchain technology. Currently, there are multiple numbers of ways through which one can verify the existence of a certificates an individual has on theblockchain. The easiest of them isto upload/scan the certificates to verify its existence. Upon uploading of the certificates,the proof of its existence gets verified, as the cryptographic digest and the marker for the transaction are also verified.</p>
+				<a href="login/login.php"><button class="btn generate" style="width:180px;height:60px;border:2px solid #fff;color:#fff;background-color:#b0413e;margin-left:200px;margin-top:30px;padding:15px;font-size:20px">Generate Now -></button></a>
 
 			</div>
 
@@ -170,7 +172,7 @@
 								<h2>1.</h2>
 								<div class="workflow-content ml-15">
 									<h4>This is the first step</h4>
-									<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+									<p> Schools grant a degree certificate and enter the student’s data into the system. Next, the system automatically records the serial number of the student in a blockchain. </p>
 								</div>
 							</div>
 							<!-- Single Service Area -->
@@ -178,7 +180,7 @@
 								<h2>2.</h2>
 								<div class="workflow-content ml-15">
 									<h4>This is the second step</h4>
-									<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+									<p>The certificate system verifies all the data. </p>
 								</div>
 							</div>
 							<!-- Single Service Area -->
@@ -186,7 +188,7 @@
 								<h2>3.</h2>
 								<div class="workflow-content ml-15">
 									<h4>This is the third step</h4>
-									<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+									<p> Instead of sending conventional hard copies, schools grant e-certificates containing a quick response (QR) code to the graduates whose data have been successfully verified. Each graduate also receives an inquiry number and electronic file of their certificate.  </p>
 								</div>
 							</div>
 							<!-- Single Service Area -->
@@ -194,7 +196,15 @@
 								<h2>4.</h2>
 								<div class="workflow-content ml-15">
 									<h4>This is the fourth step</h4>
-									<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+									<p>When applying for a job, a graduate simply sends the serial number or e-certificate with a QR code to the target companies.</p>
+								</div>
+							</div>
+							<!-- Single Service Area -->
+							<div class="single-workflow-area d-flex">
+								<h2>5.</h2>
+								<div class="workflow-content ml-15">
+									<h4>This is the fifth step</h4>
+									<p> The companies send inquiries to the system and are informed if the serial numbers are validated. The QR code enables them to recognize if the certificate has been tampered with or forged. </p>
 								</div>
 							</div>
 						</div>
@@ -203,6 +213,25 @@
 			</div>
 		</div>
 	</section>
+	
+	
+	
+	
+	<div id="wowslider-container2" style="margin-top:20px;">
+		<div class="ws_images">
+			<ul>
+				<li><img src="../assets/vendor/data2/images/group_1.png" alt="Group 1" id="wows1_0" /></li>
+				<li><img src="../assets/vendor/data2/images/group_2.png" alt="javascript slider" id="wows1_1" /></li>
+				<li><img src="../assets/vendor/data2/images/group_3.png" alt="Group 3" id="wows1_2" /></li>
+			</ul>
+		</div>
+
+	</div>
+	
+	
+	
+	
+	
 	<!-- ***** Services Area Start ***** -->
 	<div class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" id="features">
 		<h2 style="color:#b0413e;letter-spacing:3px;text-align:center;">Features</h2>
@@ -221,8 +250,8 @@
 							<img src="../assets/images/icon1.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>No1 in Sales!</h4>
-							<p>Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am.</p>
+							<h4>Efficient</h4>
+							<p>As this avoid hardcopies hence its is efficient.</p>
 						</div>
 					</div>
 				</div>
@@ -233,8 +262,8 @@
 							<img src="../assets/images/icon2.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>Documentation inside</h4>
-							<p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+							<h4> Tamper proof </h4>
+							<p> This system reduces the likelihood of the forgery.</p>
 						</div>
 					</div>
 				</div>
@@ -245,8 +274,8 @@
 							<img src="../assets/images/icon3.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>Modern Design</h4>
-							<p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+							<h4>Highly Secure</h4>
+							<p> Assures information accuracy and security.</p>
 						</div>
 					</div>
 				</div>
@@ -257,8 +286,8 @@
 							<img src="../assets/images/icon4.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>Marketing Strategist</h4>
-							<p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+							<h4>Transparent</h4>
+							<p>The granting of certificate is transparent</p>
 						</div>
 					</div>
 				</div>
@@ -269,8 +298,8 @@
 							<img src="../assets/images/icon5.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>Play with colors</h4>
-							<p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+							<h4>No Intermediaries</h4>
+							<p>No involvement of third parties.</p>
 						</div>
 					</div>
 				</div>
@@ -281,8 +310,9 @@
 							<img src="../assets/images/icon1.png" alt="">
 						</div>
 						<div class="feature-content">
-							<h4>Mix &amp; Match</h4>
-							<p>Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
+							<h4>Trustworthy</h4>
+							<p>The certificates generated are 
+                                trusted.</p>
 						</div>
 					</div>
 				</div>
@@ -324,8 +354,8 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="contact-left">
-						<h3>DigiCerts</h3>
-						<p>A place to </p>
+						<h3>DigiCert</h3>
+						<p>A place to have the digitalised certificates</p>
 						<div class="contact-info">
 							<address>
                               <strong>Headquaters:</strong>
@@ -341,7 +371,7 @@
 									<br/>
 									<strong>Fax:</strong> <span>(719)-778-8804 8890</span>
 									<br/>
-									<strong>Email:</strong> <span>info@whitegrapphics.in</span>
+									<strong>Email:</strong> <span>info@digicert.in</span>
 									<br/>
 								</p>
 							</div>
@@ -376,6 +406,8 @@
 	<!--Scripts-->
 	<script src="../assets/js/jquery-3.2.1.min.js"></script>
 	<script src="../assets/vendor/OwlCarousel2-develop/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../assets/vendor/engine2/wowslider.js"></script>
+	<script type="text/javascript" src="../assets/vendor/engine2/script.js"></script>
 	<script src="../assets/vendor/timeline/js/main.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script src="../assets/vendor/tilt/tilt.jquery.min.js"></script>

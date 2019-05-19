@@ -1,3 +1,14 @@
+<?php
+include_once("../../functions/db.php");
+ob_start();
+session_start();
+$organization_id = $_SESSION["organization_id"];// to be uncommented
+//$organization_id = 13; //to be commented afterwards when involving sessions
+$template_id=$_GET['template_id'];
+//echo $template_id;
+    
+    
+?>
 <html>
 
 <head>
@@ -28,19 +39,27 @@
                     </div>
                     <!--End of form-title-->
                     <div class="form-content">
-                        <form action="" method="POST" enctype="multipart/form-data">
+                        <form action="insert_generation.php" method="POST" enctype="multipart/form-data">
+                          <div class="alert alert-danger display-hide">
+                                            <button class="close" data-close="alert"></button> You have some form errors. Please check below. </div>
                            <div class="form-group">
                                 <label for="">Organisation Name</label>
                                 <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
-                                <input type="text" class="form-control" id="" placeholder="Organisation Name" name="organisation_name">
+                                <?php
+                               $query = "SELECT * FROM organization WHERE organization_id = $organization_id";
+                               $result = mysqli_query($connection, $query);
+                               $row = mysqli_fetch_assoc($result);
+                               
+                               ?>
+                                <input type="text" class="form-control" id="" placeholder="Organisation Name" name="name" value="<?php echo $row["name"] ?>" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="">Logo <span style="color: red;">Upload a Transperent png. Tool: <a href="https://onlinepngtools.com/create-transparent-png">onlinepngtools</a></span></label>
                                 <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
-                                <input type="file" id="" name="logo">
+                                <input type="file" accept="image/*" id="" name="logo">
                             </div>
                             <div class="form-group">
-                                <label for="">Commitee Name</label>
+                                <label for="">Committee Name :  <span style="color:red;">format(write the committee name,then a underscore and then organization name)</span></label>
                                 <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
                                 <input type="text" class="form-control" id="" placeholder="Commitee Name" name="commitee_name">
                             </div>
@@ -74,31 +93,38 @@
                                 <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
                                 <input type="file" id="" name="excel_sheet" class="">
                             </div>
-                            <button type="submit" class="btn" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2); background-color: #b0413e; padding: 10px; width: 25%; margiin-left: 30px; color: white;">Submit</button>
+                            <div class="form-group">
+<!--                                <label for="">Upload Excel Sheet</label>-->
+<!--                                <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>-->
+                                <input type="hidden" id="" name="template_id" class="" value='<?php echo $template_id; ?>'>
+                            </div>
+                            
+                            <button type="submit" class="btn" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2); background-color: #b0413e; padding: 10px; width: 25%; margiin-left: 30px; color: white;" name="submit_generation">Submit</button>
                         </form>
                     </div>
                     <!--End of form-content-->
                 </div>
                 <!--End of col-md-6-->
-<!-- YAHA RSOLUTION K WAJS FATT SAKTA H !SO AJUSTMNTS KRNA THOI IR UR PAING MARGIN MAI-->
-                <div class="col-md-7" style="background-color: #b0413e; padding: 50px; position:fixed; bottom:-4; right:0;">
-<!--
+                <div class="col-md-7" style="background-color: #b0413e; padding: 50px; position:fixed; bottom:0; right:0;">
                     <div class="certificate-image" style="padding: 50px;">
-                    <div class="" style="margin-top:100px;">
--->
-                        <div class="image-inner" style="margin-left:50px;">
-                            <img src="../../assets/images/preview1.png" alt="Work" class="img-responsive">
-                        </div>
-<!--
+                    <div class="image-outer" style="padding: 20px; padding-left: 60px;">
+<!--                        <div class="image-inner">-->
+                            <img src="../../assets/images/<?php echo $template_id;?>.png" alt="Work" class="img-responsive">
+<!--                        </div>-->
                     </div>
-                    </div>Certifiacte Image
--->
+                    </div><!--Certifiacte Image-->
                 </div>
             </div>
             <!--End of row-->
         </div>
         <!--End of container-->
     </section>
+    
+    
+    <script>
+        
+    </script>
+    
 </body>
 
 </html>

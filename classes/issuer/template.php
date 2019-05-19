@@ -4,6 +4,8 @@
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../../assets/vendor/animate/animate.css">
 
 	<link rel="stylesheet" href="../../assets/css/bootstrap/bootstrap.min.css">
 	<!-- Start WOWSlider.com HEAD section -->
@@ -166,71 +168,70 @@
 
 <body style="margin:0;background-color:#f9f9f9">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
-			<div class="wg-nav-wrapper">
-				<div class="nav-header" style="margin-top:30px;margin-left:250px">
+	<nav class="navbar-light bg-light" style="margin-top:20px;margin-left:800px;font-size:16px;">
+		<ul class="nav justify-content-left-end">
+			<li class="nav-item">
+				<a class="nav-link active bit_nav bit_nav1" href="#" style="color:#B0413E ">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active bit_nav" href="#contact" style="color:#B0413E ">Contact</a>
+			</li>
+            <li class="nav-item ">
+				<a class="logout btn bit_button" href="../classes/login/login.php" style="color:#fff;background-color:#b0413e; margin-top:5px;">Log Out</a>
+			</li>
 
-					<a href="#about" class="bit_nav bit_nav1">Home</a>
-					<a href="#contact" class="bit_nav">Contact</a>
-					<a href="" class=""><i class="fas fa-user" style="color:#bd4642;background-color:#fff"></i></a>
-				</div>
-			</div>
-			<!--nav-header-->
-		</div>
-		<!--		wg-nav-wrapper-->
 
+		</ul>
 	</nav>
 
-	<div id="wowslider-container2" style="margin-top:40px;">
-		<div class="ws_images">
-			<ul>
-				<li><img src="../../assets/vendor/data2/images/group_1.png" alt="Group 1" id="wows1_0" /></li>
-				<li><img src="../../assets/vendor/data2/images/group_2.png" alt="javascript slider" id="wows1_1" /></li>
-				<li><img src="../../assets/vendor/data2/images/group_3.png" alt="Group 3" id="wows1_2" /></li>
-			</ul>
+	
+	<div class="container-fluid" style="margin-top:40px;color:#B0413E;">
+	    <div class="content-template" style="height:100%; width:100%; background:#B0413E;color:#ffffff;padding:50px 0;">      
+                <div class="content" style="text-align:center;font-size=50px;">
+            <h2>Get The Most Amazing Certificates !</h2>
+	    </div>
+		<h3 style="text-align:center;padding-top:30px;letter-spacing:3px; line-spacing: 2px;">Choose the logo you wish to desire .... <br><br>Click On The The Template For The Preview</h3>
 		</div>
 
-	</div>
-	<div class="container-fluid" style="margin-top:40px;color:#B0413E;">
-		<h2 style="text-align:center;padding-top:30px;letter-spacing:3px">Click On The The Template For The Preview</h2>
 		<section id="tabs">
 			<div class="container">
 
 				<div class="row">
 					<div class="col-xs-12 ">
 						<nav>
-							<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist" style="background-color:#B0413E">
-								<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="color:#313E50">Academic</a>
-								<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="color:#313E50">Cultural</a>
-								<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" style="color:#313E50">Sports</a>
-								<a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false" style="color:#313E50">Comptitions</a>
+							<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist" style="background-color:#f9f9f9; margin-top:50px;">
+								<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true" style="color:#B0413E;">Academic</a>
+								<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" style="color:#B0413E">Cultural</a>
+								<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false" style="color:#B0413E">Sports</a>
+								<a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false" style="color:#B0413E">Comptitions</a>
 							</div>
 						</nav>
 						<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 								<div class="container-fluid">
 									<div class="row">
-										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
+									
+										<div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:384;margin-right:100px;margin-top:30px;">
 										
 													<img src="../../assets/images/certificate_templates/t1.png" alt="">
 										
 									
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<div class="hover zoomIn">
+												<a class="btn" href="generation_form.php?template_id=t1" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
+										
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<img src="../../assets/images/certificate_templates/t2.png" alt="">
+											<div class="hover zoomIn">
+												<a class="btn" href="generation_form.php?template_id=t2" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
 
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<img src="../../assets/images/certificate_templates/t4.png" alt="">
+											<div class="hover zoomIn">
+												<a class="btn" href="generation_form.php?template_id=t4" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
 
@@ -238,20 +239,20 @@
 
 									<div class="row">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<img src="../../assets/images/certificate_templates/t5.png" alt="">
+											<div class="hover zoomIn">
+												<a class="btn" href="generation_form.php?template_id=t5" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<img src="../../assets/images/certificate_templates/t6.png" alt="">
+											<div class="hover zoomIn">
+												<a class="btn" href="generation_form.php?t6" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
+											<img src="../../assets/images/certificate_templates/t11.png" alt="">
+											<div class="hover zoomIn">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
@@ -264,22 +265,22 @@
 							</div>
 							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 								<div class="container-fluid">
-									<div class="row">
+									<div class="row ">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
+											<img src="../../assets/images/certificate_templates/t8.png" alt="">
+											<div class="hover animated zoomIn">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
-												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
+											<img src="../../assets/images/certificate_templates/t13.png" alt="">
+											<div class="hover animated zoomIn">
+												<a class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</a>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
-											<div class="hover">
+											<img src="../../assets/images/certificate_templates/t10.png" alt="">
+											<div class="hover zoomIn">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
@@ -287,19 +288,19 @@
 									</div>
 									<div class="row">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t11.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t16.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t13.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
@@ -314,19 +315,19 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t14.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t5.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t9.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
@@ -341,13 +342,13 @@
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t17.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t18.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
@@ -362,19 +363,19 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t19.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-right:100px;;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t24.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t25.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
@@ -383,23 +384,23 @@
 									</div>
 									<div class="row">
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t16.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;;margin-right:100px;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t17.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
 										</div>
 										<div class="col-md-3 col-sm-4 image-hovering" style="height:214px;width:384;margin-top:30px;">
-											<img src="../../assets/images/certificate_templates/t1.png" alt="">
+											<img src="../../assets/images/certificate_templates/t18.png" alt="">
 											<div class="hover">
 												<button class="btn" style="width:90px;height:40px;border:2px solid #313e50; background-color:rgba(206,229,242,0.5);letter-spacing:3px;">View</button>
 											</div>
-										</div>v>
+										</div>
 									</div>
 
 

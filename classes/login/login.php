@@ -29,20 +29,20 @@
 					<img src="../../assets/images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" style="margin-top:0px;">
+				<form class="login100-form validate-form" style="margin-top:0px;" method="post" action="login_process.php">
 					<span class="login100-form-title">
 						Member Login
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="" placeholder="LogIn ID"n class="focus-input100">
+						<input class="input100" type="text" name="login_id" placeholder="LogIn ID"n class="focus-input100" >
 						<span class="symbol-input100">
 							<i class="fas fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fas fa-lock" aria-hidden="true"></i>
@@ -50,7 +50,7 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type='submit' name="submit">
 							Login
 						</button>
 					</div>
